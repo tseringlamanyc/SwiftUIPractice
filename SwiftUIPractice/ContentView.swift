@@ -13,6 +13,9 @@ struct ContentView: View {
         VStack {
             MapView()
                 .frame(height: 300)
+            
+            StupaImage()
+            
             VStack(alignment: .leading) {
                 Text("Boudha Stupa")
                     .font(.title)
