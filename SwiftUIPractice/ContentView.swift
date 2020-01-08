@@ -18,7 +18,7 @@ struct ContentView: View {
                 .offset(y: -130) // moves image upward
                 .padding(.bottom, -130) // from bottom of the view
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading) { // aligns by leading edges
                 Text("Boudha Stupa")
                     .font(.title)
                     .foregroundColor(.black)
@@ -30,7 +30,7 @@ struct ContentView: View {
                         .font(.subheadline)
                 }
             }
-            .padding() // gives label more space
+            .padding() // gives label more space so its not sticking to the edges of screen
             Spacer() // pushes it up
         }
     }

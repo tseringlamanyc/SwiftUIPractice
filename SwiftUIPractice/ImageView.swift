@@ -10,8 +10,8 @@ import SwiftUI
 
 struct StupaImage: View {
     var body: some View {
-        Image("stupa")
-            .clipShape(Circle())
+        Image("stupa") // to load the image
+            .clipShape(Circle()) //changes the shape
             .overlay(Circle().stroke(Color.green, lineWidth: 2))
             .shadow(radius: 10)
         
