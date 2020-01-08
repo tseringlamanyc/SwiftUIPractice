@@ -21,6 +21,11 @@ struct MapView: UIViewRepresentable {
         let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         view.setRegion(region, animated: true)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(
+        latitude: 27.7214, longitude: 85.3620)
+        annotation.title = "Bouddha Stupa"
+        view.addAnnotation(annotation)
     }
 }
 
