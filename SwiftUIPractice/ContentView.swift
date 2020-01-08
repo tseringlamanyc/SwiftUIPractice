@@ -15,6 +15,8 @@ struct ContentView: View {
                 .frame(height: 300)
             
             StupaImage()
+                .offset(y: -130) // moves image upward
+                .padding(.bottom, -130) // from bottom of the view
             
             VStack(alignment: .leading) {
                 Text("Boudha Stupa")
@@ -23,12 +25,13 @@ struct ContentView: View {
                 HStack {
                     Text("Kathmandu")
                         .font(.subheadline)
-                    Spacer()
+                    Spacer() // creates space and pushes them to the oppsite side of the screen
                     Text("Nepal")
                         .font(.subheadline)
                 }
             }
-            .padding()
+            .padding() // gives label more space
+            Spacer() // pushes it up
         }
     }
 }
